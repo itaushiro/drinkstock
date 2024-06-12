@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="416x16 24x24 32x32 48x48 64x64 128x128" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/q-and-a.css">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
+    <!-- ソート機能 -->
+    <script type="text/javascript">
+        $(function () {
+            $('#gallery').mixItUp();
+        });
+    </script>
+
+
+    <title>商品一覧｜ドリンクストック</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt=""
+                        class="header__logo--img"></a></div>
+
+            <ul class="global-nav">
+                <li class="nav"><a href="about.html">このサイトについて</a></li>
+                <li class="nav current-page"><a href="store.html">商品一覧</a></li>
+                <li class="nav"><a href="contact.html ">お問い合わせ</a></li>
+                <li class="nav"><a href=""><img src="images/cart.png" alt="" class="nav--cart"></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- main-contents -->
+
+    <div class="store__wrap">
+
+        <div class="drink__category__wrap">
+            <div class="serch-area">
+                <p>検索：</p>
+                <input type="text" id="serch" placeholder="商品名で検索" onkeyup="serch()">
+            </div>
+            <p class="drink__category--sort">絞り込む：メーカー</p>
+            <ul class="drink__category">
+                <li><a href="#" class="filter" data-filter="all">
+                        <p class="drink__category--maker">すべて</p>
+                    </a></li>
+                <li><a href="#" class="filter" data-filter=".coca">
+                        <p class="drink__category--maker">コカ・コーラ</p>
+                    </a></li>
+                <li><a href="#" class="filter" data-filter=".itoen">
+                        <p class="drink__category--maker">伊藤園</p>
+                    </a></li>
+                <li><a href="#" class="filter" data-filter=".asahi">
+                        <p class="drink__category--maker">アサヒ飲料</p>
+                    </a></li>
+                <li><a href="#" class="filter" data-filter=".suntory">
+                        <p class="drink__category--maker">SUNTORY</p>
+                    </a></li>
+                <li><a href="#" class="filter" data-filter=".kirin">
+                        <p class="drink__category--maker">KIRIN</p>
+                    </a></li>
+                <li><a href="#" class="filter" data-filter=".otuka">
+                        <p class="drink__category--maker">Otuka製薬</p>
+                    </a></li>
+                    <li><a href="#" class="filter" data-filter=".other">
+                        <p class="drink__category--maker">その他</p>
+                    </a></li>
+            </ul>
+        </div>
+
+        <article class="gallery__wrap">
+            <div class="title"><img src="images/title-img.png" alt="" class="title__img">
+                <h1 class="title__text">商品一覧</h1>
+            </div>
+
+            <ul id="gallery" class="drink__list">
+                <li class="drink__img mix asahi"><a href="drink.html">
+                    <img src="images/drink-1.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <p class="drink__title--category">新商品</p>
+                            <h2 class="drink__name">三ツ矢　特濃オレンジ</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix coca"><a href="drink.html"> 
+                    <img src="images/drink-8.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 class="drink__name">いろはす天然水</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix suntory"><a href="drink.html"> 
+                    <img src="images/drink-3.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 class="drink__name">やさしい麦茶</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix suntory"><a href="drink.html"> 
+                    <img src="images/drink-4.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 class="drink__name">C.C Lemon</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix other"><a href="drink.html"> 
+                    <img src="images/drink-5.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 id="drinkName" class="drink__name">ペプシコーラ ZERO</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix asahi"><a href="drink.html"> 
+                    <img src="images/drink-6.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 class="drink__name">カルピスウォーター</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix asahi"><a href="drink.html"> 
+                    <img src="images/drink-7.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 id="drinkName" class="drink__name">三ツ矢サイダー</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix suntory"><a href="drink.html"> 
+                    <img src="images/drink-2.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 id="drinkName" class="drink__name">SUNTORY 天然水</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix coca"><a href="drink.html"> 
+                    <img src="images/drink-9.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 class="drink__name">アクエリアス</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+                <li class="drink__img mix coca"><a href="drink.html"> 
+                    <img src="images/drink-10.png" alt="" class="drink__img--img">
+                    <div class="drink__info">
+                        <div class="drink__title">
+                            <h2 class="drink__name">コカ・コーラ</h2>
+                        </div>
+                        <p class="drink__name__caption">１２個セット：¥1,200
+                        </p>
+                    </div></a>
+                </li>
+
+            </ul>
+        </article>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="footer__drink">
+            <li><img src="images/drink-1.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-8.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-3.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-4.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-5.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-6.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-7.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-2.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-9.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-10.png" alt="" class="footer__drink--img"></li>
+        </ul>
+        <div class="footer__text">
+            <p class="">&copy;2022 Drink Stock</p>
+                <p class="footer__shopkeeper"><a class="footer__shopkeeper" href="about.html#shopkeeper">特定商取引法に基づく表記</a></p>
+            </div>
+    </footer>
+
+    <script>
+        function serch() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('serch');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("gallery");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                console.log(i + "回目");
+                drinkName = li[i].getElementsByTagName('h2')[0];
+                txtValue = drinkName.textContent || drinkName.innerText;
+                console.log(txtValue);
+                if (txtValue.indexOf(input.value) != -1) {
+                    li[i].style.display = "block";
+                    console.log("含まれている");
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

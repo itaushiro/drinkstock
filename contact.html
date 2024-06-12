@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="416x16 24x24 32x32 48x48 64x64 128x128" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/q-and-a.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".js-question").click(function () {
+                $(this).toggleClass("is-active");
+                $(".js-question").not(this).removeClass("is-active");
+            });
+        });
+    </script>
+
+    <title>お問い合わせ｜ドリンクストック</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt=""
+                        class="header__logo--img"></a></div>
+
+            <ul class="global-nav">
+                <li class="nav"><a href="about.html">このサイトについて</a></li>
+                <li class="nav"><a href="store.html">商品一覧</a></li>
+                <li class="nav current-page"><a href="contact.html ">お問い合わせ</a></li>
+                <li class="nav"><a href=""><img src="images/cart.png" alt="" class="nav--cart"></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- main-contents -->
+    <div class="title"><img src="images/title-img.png" alt="" class="title__img">
+        <h1 class="title__text">お問い合わせ</h1>
+    </div>
+
+    <!-- お問い合わせ -->
+
+    <div class="Form animation">
+        <div class="Form-Item">
+            <p class="Form-Item-Label">
+                <span class="Form-Item-Label-Required">必須</span>会社名
+            </p>
+            <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+        </div>
+        <div class="Form-Item">
+            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+            <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+        </div>
+        <div class="Form-Item">
+            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+            <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+        </div>
+        <div class="Form-Item">
+            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+            <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+        </div>
+        <div class="Form-Item">
+            <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+            <textarea class="Form-Item-Textarea"></textarea>
+        </div>
+        <input type="submit" class="Form-Btn" value="送信する">
+    </div>
+    </div>
+
+    <!-- Q & A -->
+    <section class="faq">
+        <div class="title"><img src="images/title-img.png" alt="" class="title__img">
+            <h1 class="title__text">よくあるご質問</h1>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">注文のキャンセルはできますか？</p>
+            <p class="faq-answer">キャンセルできる注文は、出荷準備開始前のものに限ります。キャンセルできるかどうかは 注文履歴 で確認いただけます。
+            </p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">「配達が完了しました」となっているが、商品が届かない。</p>
+            <p class="faq-answer">ほとんどの商品は時間どおりに到着しますが、追跡で「配達済み」と表示されているにもかかわらず、商品が届いていない場合があります。</p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">届いた商品に問題がある。</p>
+            <p class="faq-answer">商品に損傷や不具合がある場合、または注文と異なる商品が届いた場合は、「注文履歴」から対象商品の交換をお手続きください。</p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">私の注文の状況は？</p>
+            <p class="faq-answer">アカウントをご登録いただいているお客様は、こちらからご注文をご確認いただけます。</p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">どのような支払い方法を利用できますか？</p>
+            <p class="faq-answer">各種クレジットカード、提携のデビットカード、Apple Pay、Google Pay、PayPal決済、コンビニ払い、ATM銀行払いでのお支払いをご利用いただけます。
+            </p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">クレジットカードはいつ請求されますか？
+            </p>
+            <p class="faq-answer">商品が実際に発送されるまでは、請求は行われません。複数の商品が別々に発送された場合、商品が発送される度に請求が行われます。
+            </p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">クレジットカードがなくても注文できますか？</p>
+            <p class="faq-answer">クレジットカード以外では、コンビニ払い、PayPal、Apple pay、Google pay、ATM銀行払い (Pay-easy)がご利用いただけます。
+            </p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">請求先情報画面では、どの住所を入力する必要がありますか？
+            </p>
+            <p class="faq-answer">クレジットカード照合のため、クレジットカード明細書に記載された住所を必ずご入力ください。</p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">配送先住所はどのように入力する必要がありますか？
+            </p>
+            <p class="faq-answer">配送情報の入力画面で配送先住所を入力してください。請求先住所が異なる場合には、決済画面にて請求先住所を入力してください。</p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">海外配送はできますか？
+            </p>
+            <p class="faq-answer">海外発送は対応しておりません。日本国内のお届けのみ承っております。</p>
+        </div>
+
+        <div class="faq__inner">
+            <p class="faq-question js-question">送料はいくらですか？
+            </p>
+            <p class="faq-answer">送料は全国一律、500円（税込）です。注文内容の確認ページで、送料が適用されます。購入金額の合計が3,000円以上の場合は、送料が無料になります。</p>
+        </div>
+
+    </section>
+
+    <div class="order__flow">
+        <div><img class="order__flow--img" src="images/flow-img.png" alt=""></div>
+        <div class="order__flow__caption">
+            <p class="order__flow__caption--title">お届けまでの流れ</p>
+            <p class="order__flow__caption--text">ストックドリンクは即日配送でお届けいたします。</p>
+            </p>
+            <div class="order__flow__caption__img">
+                <div>
+                    <p class="order__flow__caption__img--text">ご注文</p><img src="images/flow-caption-img.png"
+                        class="order__flow__caption__img--img" alt="">
+                </div>
+                <img src="images/flow-caption-img4.png" class="order__flow__caption--arrow" alt="">
+                <div>
+                    <p class="order__flow__caption__img--text">配送準備</p><img src="images/flow-caption-img2.png"
+                        class="order__flow__caption__img--img" alt="">
+                </div>
+                <img src="images/flow-caption-img4.png" class="order__flow__caption--arrow" alt="">
+                <div>
+                    <p class="order__flow__caption__img--text">お届け</p><img src="images/flow-caption-img3.png"
+                        class="order__flow__caption__img--img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="footer__drink">
+            <li><img src="images/drink-1.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-2.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-3.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-4.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-5.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-6.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-7.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-8.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-9.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-10.png" alt="" class="footer__drink--img"></li>
+        </ul>
+        <div class="footer__text">
+            <p class="">&copy;2022 Drink Stock</p>
+                <p class="footer__shopkeeper"><a class="footer__shopkeeper" href="about.html#shopkeeper">特定商取引法に基づく表記</a></p>
+            </div>
+        </footer>
+</body>
+
+</html>

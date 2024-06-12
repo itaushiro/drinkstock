@@ -1,0 +1,33 @@
+.bg-slider {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.bg-slider__font {
+    color: white;
+    width: 90%;
+    position: relative;
+    top: 20%;
+    left: 30px;
+    letter-spacing: 5px;
+}
+
+.bg-slider__title {
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
+    line-height: 50px;
+}
+
+.bg-slider__text {
+    margin: 30px 0 0 0;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px black;
+    letter-spacing: 3px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="416x16 24x24 32x32 48x48 64x64 128x128" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/q-and-a.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".js-question").click(function () {
+                $(this).toggleClass("is-active");
+                $(".js-question").not(this).removeClass("is-active");
+            });
+        });
+    </script>
+
+    <title>お問い合わせ｜ドリンクストック</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt=""
+                        class="header__logo--img"></a></div>
+
+            <ul class="global-nav">
+                <li class="nav"><a href="about.html">このサイトについて</a></li>
+                <li class="nav current-page"><a href="store.html">商品一覧</a></li>
+                <li class="nav"><a href="contact.html ">お問い合わせ</a></li>
+                <li class="nav"><a href=""><img src="images/cart.png" alt="" class="nav--cart"></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- main-contents -->
+
+    <div class="drink__wrap">
+        <div class="drink__drink__img">
+            <img src="images/drink-3.png" alt="" class="drink__drink__img--img">
+        </div>
+        <div>
+            <div class="title"><img src="images/title-img.png" alt="" class="title__img--drink">
+                <h1 class="title__text--drink">やさしい麦茶 680mL 12本入り</h1>
+            </div>
+
+            <p class="drink__caption">カラダにやさしい素材を集めてつくった、すっきり飲みやすい麦茶です。(カフェインゼロ・アレルギー特定原材料等28品目不使用)大人から子どもまで安心して飲める、すっきりやさしい味わいに仕上げています。カラダにやさしい素材をブレンドし、それぞれの特徴を活かす焙煎と水出しエキスにより、豊かな香ばしさとすっきりした後味を両立しています。</p>
+            
+            <div class="price">
+                <p class="price__title">価格：</p>
+                <p class="price__text">￥1,200 <span>(税込み)</span></p>
+            </div>
+
+            <p class="go-cart">カートに入れる</p>
+
+            <hr>
+            <p class="caption__title">商品詳細</p>
+            <p class="drink__caption">
+                ブランド名 GREEN DA・KA・RA（グリーンダカラ） ／ シリーズ名 やさしい麦茶 ※お手元に届いた商品を必ずご確認ください 大麦（カナダ、ポーランド、日本、その他）、炒り米、はと麦、海藻エキス ／ 内容量(g) 680ml</p>
+
+            <hr>
+
+            
+            <p class="drink__caption">GREEN DA・KA・RAやさしい麦茶が新しくなりました！
+                大人から子どもまで安心して飲める、すっきりやさしい味わいの麦茶です。
+                
+                やさしい甘みと香ばしさが特徴の大麦と炒り米を配合し、何度も繰り返し飲みたくなる味わいです。</p>
+
+            <hr>
+
+            <p class="caption__title">栄養成分表示(100mlあたり)</p>
+            <p class="drink__caption">
+                
+                エネルギー	0kcal
+                たんぱく質	0g
+                脂質	0g
+                炭水化物	0g
+                食塩相当量	0.001〜0.016g
+                カリウム	1～10mg
+                カルシウム	0～1.0mg
+                マグネシウム	0～1.0mg
+                アミノ酸：2～20mg
+                カフェイン：0mg</p>
+
+        </div>
+    </div>
+
+    <ul class="home__drink__list">
+        <li class="home__drink__img"><a href="drink.html">
+            <div class="drink__img--wrap"><img src="images/drink-1.png" alt="" class="home__drink__img--img"></div>
+            <div class="drink__info">
+                <div class="drink__title">
+                    <p class="drink__title--category">新商品</p>
+                    <h2 class="drink__name">三ツ矢　特濃オレンジ</h2>
+                </div>
+                <p class="drink__name__caption">１２個セット：¥1,200
+                </p>
+            </div></a>
+        </li>
+
+        <li class="home__drink__img"><a href="drink.html">
+            <div class="drink__img--wrap"><img src="images/drink-7.png" alt="" class="home__drink__img--img"></div>
+            <div class="drink__info">
+                <div class="drink__title">
+                    <h2 class="drink__name">三ツ矢サイダー</h2>
+                </div>
+                <p class="drink__name__caption">１２個セット：¥1,200
+                </p>
+            </div></a>
+        </li>
+        <li class="home__drink__img"><a href="drink.html">
+            <div class="drink__img--wrap"><img src="images/drink-8.png" alt="" class="home__drink__img--img"></div>
+            <div class="drink__info">
+                <div class="drink__title">
+                    <h2 class="drink__name">いろはす天然水</h2>
+                </div>
+                <p class="drink__name__caption">１２個セット：¥1,200
+                </p>
+            </div></a>
+        </li>
+    </ul>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="footer__drink">
+            <li><img src="images/drink-1.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-2.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-3.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-4.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-5.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-6.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-7.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-8.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-9.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-10.png" alt="" class="footer__drink--img"></li>
+        </ul>
+        <div class="footer__text">
+            <p class="">&copy;2022 Drink Stock</p>
+                <p class="footer__shopkeeper"><a class="footer__shopkeeper" href="about.html#shopkeeper">特定商取引法に基づく表記</a></p>
+            </div>
+        </footer>
+</body>
+
+</html>

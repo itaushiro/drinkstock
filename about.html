@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="416x16 24x24 32x32 48x48 64x64 128x128" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/q-and-a.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".js-question").click(function () {
+                $(this).toggleClass("is-active");
+                $(".js-question").not(this).removeClass("is-active");
+            });
+        });
+    </script>
+
+    <title>このサイトについて｜ドリンクストック</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt=""
+                        class="header__logo--img"></a></div>
+
+            <ul class="global-nav">
+                <li class="nav current-page"><a href="about.html">このサイトについて</a></li>
+                <li class="nav"><a href="store.html">商品一覧</a></li>
+                <li class="nav "><a href="contact.html ">お問い合わせ</a></li>
+                <li class="nav"><a href=""><img src="images/cart.png" alt="" class="nav--cart"></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- main-contents -->
+    <div class="title"><img src="images/title-img.png" alt="" class="title__img">
+        <h1 class="title__text">このサイトについて</h1>
+    </div>
+
+        <img src="images/drink-45deg-0.png" alt="" id="img45Left" class="img-45deg__left">
+        <div class="img-45deg">
+        <img src="images/drink-45deg-right-0.png" alt="" id="img45Right" class="img-45deg__right">
+    </div>
+    <section class="about">
+        <h1 class="about__title">このサイトはまとめ買いで安いドリンク専門店です！</h1>
+
+        <p class="about__caption">みなさんは飲み物を買い溜めしていますか？<br>
+            災害時や緊急時の備蓄用にも必要不可欠です。<br>
+            しかし飲み物って重たいですよね。<br>
+            普段の買い物で何箱も何種類もって言うのは難しいと思います。<br>
+
+            <span>そんな時に便利なのがこのサイトです。</span>
+        </p>
+
+        <div class="">
+
+        </div>
+
+    </section>
+
+    <div id="shopkeeper" class="title"><img src="images/title-img.png" alt="" class="title__img">
+        <h1 class="title__text">特定商取引法に基づく表記</h1>
+    </div>
+
+    <div class="shopkeeper">
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">販売業者</p>
+            <p class="shopkeeper__text">株式会社ドリンクストック</p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">郵便番号</p>
+            <p class="shopkeeper__text">〒151-0051</p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">住所</p>
+            <p class="shopkeeper__text">東京都渋谷区千駄ケ谷３丁目６２−８</p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">商品代金以外の料金の説明</p>
+            <p class="shopkeeper__text">送料、消費税がかかります。また決済方法によって決済取扱手数料がかかります。
+                1梱包あたりの送料は、地域により以下の金額となります。
+                熊本県、宮崎県、鹿児島県、沖縄県、北海道　800円
+                上記以外の地域　600円</p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">申し込み有効期限</p>
+            <p class="shopkeeper__text">ご注文後7日以内といたします。ご注文後７日間ご入金がない場合は、購入の意思がないものとし、注文を自動的にキャンセルとさせていただきます。
+            </p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">不良品</p>
+            <p class="shopkeeper__text">商品到着後、1週間以内にご連絡ください。不良品と確認出来次第、交換、または返金をさせていただきます。
+            </p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">販売数量</p>
+            <p class="shopkeeper__text">購入可能点数は商品により異なります。在庫数量の範囲内にてお買い求めいただけます。
+            </p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">引き渡し時期</p>
+            <p class="shopkeeper__text">原則としてご入金確認後（代引き配送をご利用の場合、申込み確認後）、3営業日以内に発送致します。
+            </p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">お支払い期限</p>
+            <p class="shopkeeper__text">ご注文日より7日間以内
+            </p>
+        </div>
+
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">返品期限</p>
+            <p class="shopkeeper__text">商品到着後7日以内
+            </p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">返品送料</p>
+            <p class="shopkeeper__text">お客様負担。ただし、商品不良の場合は弊社負担
+            </p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">サービス名</p>
+            <p class="shopkeeper__text">ドリンクストック</p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">電話番号</p>
+            <p class="shopkeeper__text">03-1234-5678</p>
+        </div>
+        <div class="shopkeeper__list">
+            <p class="shopkeeper__name">ホームページアドレス</p>
+            <p class="shopkeeper__text">https:/stock-drink.com</p>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="footer__drink">
+            <li><img src="images/drink-1.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-2.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-3.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-4.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-5.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-6.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-7.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-8.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-9.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-10.png" alt="" class="footer__drink--img"></li>
+        </ul>
+        <div class="footer__text">
+            <p class="">&copy;2022 Drink Stock</p>
+                <p class="footer__shopkeeper"><a class="footer__shopkeeper" href="about.html#shopkeeper">特定商取引法に基づく表記</a></p>
+            </div>
+    </footer>
+
+
+    <script>
+        
+
+        window.onload = function(){
+            var randomNum = Math.floor(Math.random()*3);
+            console.log(randomNum);
+            document.getElementById("img45Left").src = "images/drink-45deg-"+ randomNum + ".png";
+            randomNum = Math.floor(Math.random()*3);
+            document.getElementById("img45Right").src = "images/drink-45deg-right-" + randomNum +".png";
+
+    }
+    </script>
+</body>
+
+</html>

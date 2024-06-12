@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="416x16 24x24 32x32 48x48 64x64 128x128" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg-slider.css">
+    <link rel="stylesheet" href="css/auto-slide.css">
+
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+
+    <!-- bgslider -->
+    <script>
+        jQuery(function ($) {
+            $('.bg-slider').bgSwitcher({
+                images: ['images/main-2.png'], // 切替背景画像を指定
+                interval: 5000, // 背景画像を切り替える間隔を指定 3000=3秒
+                loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+                shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+                effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+                duration: 500, // エフェクトの時間を指定します。
+                easing: "swing" // エフェクトのイージングをlinear,swingから指定
+            });
+        });
+    </script>
+
+    <!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
+    <!-- ソート機能 -->
+    <script type="text/javascript">
+        $(function () {
+            $('#gallery').mixItUp();
+        });
+    </script>
+
+    
+    <title>ホーム｜ドリンクストック</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt=""
+                        class="header__logo--img"></a></div>
+
+            <ul class="global-nav">
+                <li class="nav"><a href="about.html">このサイトについて</a></li>
+                <li class="nav"><a href="store.html">商品一覧</a></li>
+                <li class="nav"><a href="contact.html">お問い合わせ</a></li>
+                <li class="nav"><a href=""><img src="images/cart.png" alt="" class="nav--cart"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- bg-slider -->
+    <div class="bg-slider">
+        <div class="bg-slider__font">
+            <h1 class="bg-slider__title"><br>
+                <br>
+            </h1>
+            <div class="bg-slider__text__contact">
+                <p class="bg-slider__text"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- auto-slider -->
+    <div class="auto-slider">
+        <div class="auto-slider__1">
+            <div><a href="drink.html"><img src="images/drink-1.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-2.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-3.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-4.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-5.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-6.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-7.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-8.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-9.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-10.png" class="auto-slider__img"></a></div>
+        </div>
+
+        <div class="auto-slider__2">
+            <div><a href="drink.html"><img src="images/drink-1.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-2.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-3.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-4.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-5.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-6.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-7.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-8.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-9.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-10.png" class="auto-slider__img"></a></div>
+        </div>
+        <div class="auto-slider__1">
+            <div><a href="drink.html"><img src="images/drink-1.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-2.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-3.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-4.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-5.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-6.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-7.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-8.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-9.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-10.png" class="auto-slider__img"></a></div>
+        </div>
+
+        <div class="auto-slider__2">
+            <div><a href="drink.html"><img src="images/drink-1.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-2.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-3.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-4.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-5.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-6.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-7.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-8.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-9.png" class="auto-slider__img"></a></div>
+            <div><a href="drink.html"><img src="images/drink-10.png" class="auto-slider__img"></a></div>
+        </div>
+
+    </div>
+
+    <!-- main-contents -->
+    <article class="home-section">
+    <div class="title"><img src="images/title-img.png" alt="" class="title__img">
+        <h1 class="title__text">人気商品</h1>
+    </div>
+
+    <ul class="home__drink__list">
+        <li class="home__drink__img"><a href="drink.html">
+            <div class="drink__img--wrap"><img src="images/drink-1.png" alt="" class="home__drink__img--img"></div>
+            <div class="drink__info">
+                <div class="drink__title">
+                    <p class="drink__title--category">新商品</p>
+                    <h2 class="drink__name">三ツ矢　特濃オレンジ</h2>
+                </div>
+                <p class="drink__name__caption">１２個セット：¥1,200
+                </p>
+            </div></a>
+        </li>
+
+        <li class="home__drink__img"><a href="drink.html">
+            <div class="drink__img--wrap"><img src="images/drink-7.png" alt="" class="home__drink__img--img"></div>
+            <div class="drink__info">
+                <div class="drink__title">
+                    <h2 class="drink__name">三ツ矢サイダー</h2>
+                </div>
+                <p class="drink__name__caption">１２個セット：¥1,200
+                </p>
+            </div></a>
+        </li>
+        <li class="home__drink__img"><a href="drink.html">
+            <div class="drink__img--wrap"><img src="images/drink-8.png" alt="" class="home__drink__img--img"></div>
+            <div class="drink__info">
+                <div class="drink__title">
+                    <h2 class="drink__name">いろはす天然水</h2>
+                </div>
+                <p class="drink__name__caption">１２個セット：¥1,200
+                </p>
+            </div></a>
+        </li>
+    </ul>
+
+        <div class="more"><a href="">
+                <a href="store.html">
+                    <p class="more__text">もっと見る</p>
+            </a>
+        </a></div>
+    </article>
+    
+    <article class="home-section">
+        <div class="title"><img src="images/title-img.png" alt="" class="title__img">
+            <h1 class="title__text">ブランドから探す</h1>
+        </div>
+
+        <ul class="bland">
+            <li class="bland__list"><a href="store.html#"><img src="images/bland-logo4.png" alt=""
+                        class="bland__list--img"></a></li>
+            <li class="bland__list"><a href="store.html#" class="filter" data-filter=".buy"><img
+                        src="images/bland-logo1.png" alt="" class="bland__list--img"></a></li>
+            <li class="bland__list"><a href="store.html"><img src="images/bland-logo2.png" alt="" class="bland__list--img"></a></li>
+            <li class="bland__list"><a href="store.html"><img src="images/bland-logo3.png" alt="" class="bland__list--img"></a></li>
+
+        </ul>
+    </article>
+
+    <div class="order__flow">
+        <div class="order__flow__img"><img class="order__flow--img" src="images/flow-img.png" alt=""></div>
+        <div class="order__flow__caption">
+            <p class="order__flow__caption--title">お届けまでの流れ</p>
+            <p class="order__flow__caption--text">ストックドリンクは即日配送でお届けいたします。</p>
+            </p>
+            <div class="order__flow__caption__img">
+                <div>
+                    <p class="order__flow__caption__img--text">ご注文</p><img src="images/flow-caption-img.png"
+                        class="order__flow__caption__img--img" alt="">
+                </div>
+                <img src="images/flow-caption-img4.png" class="order__flow__caption--arrow" alt="">
+                <div>
+                    <p class="order__flow__caption__img--text">配送準備</p><img src="images/flow-caption-img2.png"
+                        class="order__flow__caption__img--img" alt="">
+                </div>
+                <img src="images/flow-caption-img4.png" class="order__flow__caption--arrow" alt="">
+                <div>
+                    <p class="order__flow__caption__img--text">お届け</p><img src="images/flow-caption-img3.png"
+                        class="order__flow__caption__img--img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="footer__drink">
+            <li><img src="images/drink-1.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-2.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-3.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-4.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-5.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-6.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-7.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-8.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-9.png" alt="" class="footer__drink--img"></li>
+            <li><img src="images/drink-10.png" alt="" class="footer__drink--img"></li>
+        </ul>
+        <div class="footer__text">
+        <p class="">&copy;2022 Drink Stock</p>
+            <p class="footer__shopkeeper"><a class="footer__shopkeeper" href="about.html#shopkeeper">特定商取引法に基づく表記</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
